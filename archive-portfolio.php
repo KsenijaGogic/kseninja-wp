@@ -12,16 +12,20 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-			<?php the_post_navigation(); ?>
-
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+			<h2><?php the_title(); ?></h2>
+			<p><?php the_field('client_name'); ?></p>
+			<div class="shortDesc">
+				<?php the_field('short_desc'); ?>
+			</div>
+			<?php the_post_thumbnail(); ?>
+			<div class="images">
+				<?php  while( has_sub_field('images') ): ?>
+					<div class="image">
+						<p><?php the_sub_field('caption'); ?></p>
+						<?php $image = get_sub_field('image'); ?>
+						<img src="<?php echo $image['url']?>" alt="">
+					</div>
+				<?php endwhile; ?></div>
 
 		<?php endwhile; // End of the loop. ?>
 
