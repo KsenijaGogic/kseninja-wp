@@ -1,25 +1,17 @@
-<?php
-/**
- * The template for displaying the footer.
- *
- * Contains the closing of the #content div and all content after
- *
- * @package kseninja
- */
+<footer>
+  <div class="container">
+    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  </div>
+</footer>
 
-?>
+<script>
+/* Google Analytics! */
+ var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID
+ (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+ g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+ s.parentNode.insertBefore(g,s)}(document,"script"));
+</script>
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'kseninja' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'kseninja' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'kseninja' ), 'kseninja', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
-
+<?php wp_footer(); ?>
 </body>
 </html>

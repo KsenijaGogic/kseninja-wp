@@ -1,0 +1,18 @@
+.turnRed {
+	background: $red;
+	width: 50%;
+	height: 100vh;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	padding: 10px;
+	/*margin: 0;*/
+}
+
+.sidebarShrink {
+	width: 25%;
+}

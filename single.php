@@ -1,32 +1,46 @@
-<?php
-/**
- * The template for displaying all single posts.
- *
- * @package kseninja
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+<div class="main">
+  <div class="container">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+    <div class="content">
+      <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+          <h1 class="entry-title"><?php the_title(); ?></h1>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+          <div class="entry-meta">
+            <?php hackeryou_posted_on(); ?>
+          </div><!-- .entry-meta -->
 
-			<?php the_post_navigation(); ?>
+          <div class="entry-content">
+            <?php the_content(); ?>
+            <?php wp_link_pages(array(
+              'before' => '<div class="page-link"> Pages: ',
+              'after' => '</div>'
+            )); ?>
+          </div><!-- .entry-content -->
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+          <div class="entry-utility">
+            <?php hackeryou_posted_in(); ?>
+            <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
+          </div><!-- .entry-utility -->
+        </div><!-- #post-## -->
 
-		<?php endwhile; // End of the loop. ?>
+        <div id="nav-below" class="navigation">
+          <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>
+          <p class="nav-next"><?php next_post_link('%link', '%title &rarr;'); ?></p>
+        </div><!-- #nav-below -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+        <?php comments_template( '', true ); ?>
 
-<?php get_sidebar(); ?>
+      <?php endwhile; // end of the loop. ?>
+
+    </div> <!-- /.content -->
+
+    <?php get_sidebar(); ?>
+
+  </div> <!-- /.container -->
+</div> <!-- /.main -->
+
 <?php get_footer(); ?>

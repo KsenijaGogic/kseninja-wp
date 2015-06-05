@@ -19,52 +19,48 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
+.wp-post-image {
+  max-width: 200px; }
 
-body {
-	margin: 0;
-	padding: 0;
-
-}
-  
-
-.sidebar {
-	/*background: linear-gradient(#FF2E22, #AC1D19);*/
-	width: 50%;
-	width: 50%;
-	height: 100vh;
-	position: fixed;
-	z-index: 999;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	-webkit-transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
-	/*padding: 10px;*/
-	/*margin: 0;*/
-}
-
-.sidebarShrink {
-	width: 25%;
-}
-
+.idiot {
+  overflow: hidden; }
 
 .content {
-	width: 50%;
-	/*position: absolute;*/
-	float: right;
-	margin: 0;
-	padding: 0;
-	-webkit-transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
-	background: url(websiteBkgGridsmall.png);
-}
-.contentFull{
-	width: 75%;
-}
+  width: 50%;
+  /*position: absolute;*/
+  float: right;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  background: url(assets/websiteBkgGridsmall.png); }
+
+.contentFull {
+  width: 75%; }
 
 .hunna {
-	margin: 0;
-	/*width: 100%;*/
-	height: 100vh;
-	/*background: url(websiteBkgGridsmall.png);*/
-}
+  margin: 0;
+  /*width: 100%;*/
+  height: 100vh;
+  /*background: url(websiteBkgGridsmall.png);*/ }
+
+.turnRed {
+  background: RGB(224, 79, 72);
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  padding: 10px;
+  /*margin: 0;*/ }
+
+.sidebarShrink {
+  width: 25%; }
+
+body {
+  margin: 0;
+  padding: 0; }

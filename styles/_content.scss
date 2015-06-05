@@ -1,0 +1,24 @@
+.idiot {
+	overflow: hidden;
+}
+.content {
+	width: 50%;
+	/*position: absolute;*/
+	float: right;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	background: url(assets/websiteBkgGridsmall.png);
+	// overflow: hidden;
+}
+.contentFull{
+	width: 75%;
+}
+
+.hunna {
+	margin: 0;
+	/*width: 100%;*/
+	height: 100vh;
+	/*background: url(websiteBkgGridsmall.png);*/
+}
