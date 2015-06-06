@@ -1,18 +1,53 @@
-.turnRed {
+.sidebar {
 	background: $red;
-	width: 50%;
 	height: 100vh;
 	position: fixed;
 	z-index: 999;
 	top: 0;
 	left: 0;
 	bottom: 0;
-	-webkit-transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
-	padding: 10px;
-	/*margin: 0;*/
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	aside {
+		margin: auto;
+	}
+	h1, h3 {
+		text-align: center;
+		color: white;
+		margin: 10px;
+		line-height: 1;
+	}
+}
+
+.sidebarFull {
+	width: 50%;
+}
+
+.first, .second {
+	transition: all 0.5s;
 }
 
 .sidebarShrink {
 	width: 25%;
+	h1 {
+		font-size: 67px;
+	}
+	h2 {
+		font-size: 50px;
+	}
+}
+
+.sidebar .hide {
+	display: none;
+}
+
+.sidebarShrink .first {
+	display: none;
+}
+
+.sidebarFull .second {
+	display: none;
 }
