@@ -17,6 +17,12 @@
 				<li><a href="#contact">Contact</a></li>
 				<li><a href="#top">Top</a></li>
 			</ul>
+			<ul class="social">
+				<li><a href="https://ca.linkedin.com/in/ksenijagogic"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="mailto:k@kse.ninja?Subject=Hi!" target="_top"><i class="fa fa-envelope"></i></a></li>
+				<li><a href="https://medium.com/@kseninja"><i class="fa fa-medium"></i></a></li>
+				<li><a href="https://twitter.com/kseninja"><i class="fa fa-twitter"></i></a></li>
+			</ul>
 		</aside>
 	</div>
 			
@@ -28,6 +34,12 @@
 				<li><a href="#dev">Development</a></li>
 				<li><a href="#design">Design</a></li>
 				<li><a href="">Contact</a></li>
+			</ul>
+			<ul class="social">
+				<li><a href="https://ca.linkedin.com/in/ksenijagogic"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="mailto:k@kse.ninja?Subject=Hi!" target="_top"><i class="fa fa-envelope"></i></a></li>
+				<li><a href="https://medium.com/@kseninja"><i class="fa fa-medium"></i></a></li>
+				<li><a href="https://twitter.com/kseninja"><i class="fa fa-twitter"></i></a></li>
 			</ul>
 		</div>
 			
