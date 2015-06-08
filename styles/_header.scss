@@ -1,11 +1,20 @@
 div.intro {
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
+	padding: 40px;
+	justify-content: space-between;
+	p {
+		width: 75%;
+		text-align: center;
+		margin: 0 auto;
+	}
 }
 
 img.header {
 	width: 75%;
 	margin: 0 auto;
+	-webkit-mix-blend-mode: multiply;
+	// background: blue;
+
 }
 

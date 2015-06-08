@@ -1,0 +1,39 @@
+section.project {
+	padding: 20px;
+}
+
+section.projectEach {
+	width: 400px;
+	text-align: center;
+	margin: 20px;
+	background: $whiteOverlay;
+	transition: 1.5s all;
+}
+
+.projectGallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.wp-post-image {
+		max-width: 400px;
+		max-height: 300px;
+	}
+	img {
+		-webkit-filter: grayscale(90%);
+		transition: 0.3s all;
+		&:hover {
+			-webkit-filter: grayscale(2%);
+
+		}
+
+	}
+}
+
+.sectionTitle {
+	text-align: center;
+	color: $red;
+}
+
+.projectTitle {
+	font-size: 24px;
+}

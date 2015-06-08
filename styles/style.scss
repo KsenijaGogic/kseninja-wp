@@ -15,6 +15,7 @@ $red: RGB(224, 79, 72);
 $darkRed: RGB(172, 29, 25);
 $white: RGB(238, 241, 242);
 $black: black;
+$whiteOverlay: RGBA(255,255,255,1);
 
 @import 'setup';
 @import 'typography';
@@ -24,6 +25,7 @@ $black: black;
 @import 'images';
 @import 'sidebar';
 @import 'content';
+@import 'projects';
 
 
 body {
