@@ -1,13 +1,26 @@
 section.project {
 	padding: 20px;
 }
+.imageCaption {
+	width: 400px;
+	height: 175px;
+	position: relative;
+	margin-top: -5px;
+	padding: 10px;
+	h2 {
+		margin: 0;
+		margin-top: 5px;
+	}
+}
 
 section.projectEach {
 	width: 400px;
 	text-align: center;
 	margin: 20px;
 	background: $whiteOverlay;
+	border-bottom: 5px solid $red;
 	transition: 1.5s all;
+	box-shadow: 0px 0px 10px #eee;
 }
 
 .projectGallery {
@@ -21,19 +34,79 @@ section.projectEach {
 	img {
 		-webkit-filter: grayscale(90%);
 		transition: 0.3s all;
-		&:hover {
-			-webkit-filter: grayscale(2%);
-
-		}
-
 	}
 }
 
+
+.projectLink {
+	visibility: hidden;
+	// display: none;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width:100%; 
+	height:0px;
+	z-index: 99;
+	background: $red;
+	transition: 0.3s all;
+	padding: 20px;
+	font-size: 18px;
+	color: $white;
+	text-decoration: none;
+	display: flex;
+	p {
+		margin: auto;
+		border-bottom: 2px solid $white;
+	}
+}
+
+.projectEach:hover {
+	img {
+	-webkit-filter: grayscale(2%);
+	}
+	.projectLink {
+		visibility: visible;
+		opacity: 1;
+		height: 100%;
+	}
+}
 .sectionTitle {
 	text-align: center;
 	color: $red;
+	// text-decoration: underline;
 }
 
 .projectTitle {
 	font-size: 24px;
 }
+
+
+section.project {
+	background: url(assets/textured_paper_@2X.png);
+	.projectContainer {
+		width: 900px;
+		// background: red;
+		margin: 0 auto;
+		.projectGallery {
+		align-items: center;
+		justify-content: center;
+		// background: blue;
+
+		}
+	}
+
+}
+
+.tags {
+	a {
+		background: $red;
+		color: white;
+		text-decoration: none;
+		display: inline-block;
+		padding: 5px 5px 3px 5px;
+		margin: 3px;
+	}
+}
+
+

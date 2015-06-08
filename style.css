@@ -168,7 +168,8 @@ div.intro {
   display: flex;
   flex-direction: column;
   padding: 40px;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background: url(assets/websiteBkgGridsmall.png) fixed; }
   div.intro p {
     width: 75%;
     text-align: center;
@@ -329,31 +330,31 @@ aside.second {
 .contentFull {
   width: 75%; }
 
-.intro {
-  background: url(assets/websiteBkgGridsmall.png) fixed; }
-
-.project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  background: url(assets/textured_paper_@2X.png); }
-
 .hunna {
   margin: 0;
-  /*width: 100%;*/
-  height: 100vh;
-  /*background: url(websiteBkgGridsmall.png);*/ }
+  height: 100vh; }
 
 section.project {
   padding: 20px; }
+
+.imageCaption {
+  width: 400px;
+  height: 175px;
+  position: relative;
+  margin-top: -5px;
+  padding: 10px; }
+  .imageCaption h2 {
+    margin: 0;
+    margin-top: 5px; }
 
 section.projectEach {
   width: 400px;
   text-align: center;
   margin: 20px;
   background: RGBA(255, 255, 255, 1);
-  transition: 1.5s all; }
+  border-bottom: 5px solid RGB(224, 79, 72);
+  transition: 1.5s all;
+  box-shadow: 0px 0px 10px #eee; }
 
 .projectGallery {
   display: flex;
@@ -365,8 +366,34 @@ section.projectEach {
   .projectGallery img {
     -webkit-filter: grayscale(90%);
     transition: 0.3s all; }
-    .projectGallery img:hover {
-      -webkit-filter: grayscale(2%); }
+
+.projectLink {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  z-index: 99;
+  background: RGB(224, 79, 72);
+  transition: 0.3s all;
+  padding: 20px;
+  font-size: 18px;
+  color: RGB(238, 241, 242);
+  text-decoration: none;
+  display: flex; }
+  .projectLink p {
+    margin: auto;
+    border-bottom: 2px solid RGB(238, 241, 242); }
+
+.projectEach:hover img {
+  -webkit-filter: grayscale(2%); }
+
+.projectEach:hover .projectLink {
+  visibility: visible;
+  opacity: 1;
+  height: 100%; }
 
 .sectionTitle {
   text-align: center;
@@ -374,6 +401,34 @@ section.projectEach {
 
 .projectTitle {
   font-size: 24px; }
+
+section.project {
+  background: url(assets/textured_paper_@2X.png); }
+  section.project .projectContainer {
+    width: 900px;
+    margin: 0 auto; }
+    section.project .projectContainer .projectGallery {
+      align-items: center;
+      justify-content: center; }
+
+.tags a {
+  background: RGB(224, 79, 72);
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 5px 3px 5px;
+  margin: 3px; }
+
+section.contact {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: url(assets/websiteBkgGridsmall.png) fixed; }
+  section.contact .contactContainer {
+    margin: auto; }
+    section.contact .contactContainer .contactForm {
+      background: RGB(224, 79, 72);
+      width: 900px; }
 
 body {
   margin: 0;

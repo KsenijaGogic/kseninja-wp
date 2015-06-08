@@ -1,0 +1,17 @@
+section.contact {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	background: url(assets/websiteBkgGridsmall.png) fixed;
+	.contactContainer {
+		margin: auto;
+		.contactForm {
+		background: $red;
+		width: 900px;
+
+		}
+	}
+}
+
+
+

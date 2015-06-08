@@ -1,6 +1,7 @@
 .idiot {
 	overflow: hidden;
 }
+
 .content {
 	width: 50%;
 	float: right;
@@ -15,27 +16,8 @@
 	width: 75%;
 }
 
-.intro {
-	background: url(assets/websiteBkgGridsmall.png) fixed;
-}
-
-
-.project {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0 auto;
-	background: url(assets/textured_paper_@2X.png);
-	section {
-		// margin: 0 auto;
-	}
-
-}
-
 
 .hunna {
 	margin: 0;
-	/*width: 100%;*/
 	height: 100vh;
-	/*background: url(websiteBkgGridsmall.png);*/
 }
