@@ -1,4 +1,6 @@
 $(function() {
+	$('a').smoothScroll();
+	
 	$(document).on("scroll", function(){
 		var $height = $(window).height();
 		console.log($(this).scrollTop())

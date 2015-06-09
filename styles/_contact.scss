@@ -3,15 +3,81 @@ section.contact {
 	flex-direction: column;
 	height: 100vh;
 	background: url(assets/websiteBkgGridsmall.png) fixed;
+	// width: 100%;
 	.contactContainer {
 		margin: auto;
 		.contactForm {
-		background: $red;
-		width: 900px;
-
+		background: RGBA(255,255,255,0.3);
+		width: 800px;
 		}
 	}
 }
 
+.wpcf7 {
+	font-size: 16px;
+	// letter-spacing: 2px;
+	form {
+		padding-left: 20px;
+		// padding: 10px;
+		textarea {
+			width: 750px;
+		}
+		p {
+			display: inline-block;
+			width: 750px;
+		}
+		span {
+			input {
+			width: 100%;
+			}
+		}
+		input[type='submit']{
+			width: 100%;
+			display: block;
+		}
+	}
+
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+	// background: white;
+	// color: RGBA(255,255,255,0.5);
+	background: white;
+	border: 2px solid rgba(255,255,255,0);
+	border-bottom: 2px solid $red;
+	padding: 10px;
+	transition: 0.3s all;
+	&:focus {
+		outline: none !important;
+		border: 2px solid $red;
+	}
+}
+
+.wpcf7 input[type="submit"] {
+	background: white;
+	border: 2px solid rgba(255,255,255,0);
+	border-bottom: 2px solid $red;
+	padding: 10px;
+	transition: 0.3s all;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	&:focus {
+		outline: none !important;
+		border: 2px solid $red;
+	}
+}
+
+.contactContainer {
+	p.contact {
+		text-align: center;
+		a {
+			color: $red;
+			text-decoration: none;
+			border-bottom: 2px solid $red;
+		}
+	}
+}
 
 

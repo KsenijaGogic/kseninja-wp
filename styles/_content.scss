@@ -1,7 +1,3 @@
-.idiot {
-	overflow: hidden;
-}
-
 .content {
 	width: 50%;
 	float: right;
@@ -14,6 +10,16 @@
 }
 .contentFull{
 	width: 75%;
+	.projectContainer {
+	// opacity: 1;
+
+	}
+}
+
+.contentShrink {
+	.projectContainer {
+		// opacity: 0;
+	}
 }
 
 

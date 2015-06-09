@@ -28,8 +28,15 @@ $whiteOverlay: RGBA(255,255,255,1);
 @import 'projects';
 @import 'contact';
 
-
+html {
+	width: 100%;
+}
 body {
+	width: 100%;
 	margin: 0;
 	padding: 0;
+	::selection {
+	  background: $red;
+	}
+
 }

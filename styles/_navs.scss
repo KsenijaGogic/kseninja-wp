@@ -70,6 +70,13 @@ ul.social {
 		a:hover:after { 
 			height:100%; 
 			}
+		p {
+			font-size: 14px;
+			margin-bottom: 0;
+			font-style: italic;
+			margin-top: 20px;
+			color: $white;
+		}
 	}
 }
 

@@ -3,19 +3,45 @@ div.intro {
 	flex-direction: column;
 	padding: 40px;
 	justify-content: space-between;
+	align-items: center;
 	background: url(assets/websiteBkgGridsmall.png) fixed;
 	p {
 		width: 75%;
 		text-align: center;
 		margin: 0 auto;
 	}
+	p.aboutMe {
+	// margin-top: 15px;
+	font-size: 18px;
+	line-height: 1.3;
+	}
 }
 
 img.header {
 	width: 75%;
 	margin: 0 auto;
-	-webkit-mix-blend-mode: multiply;
-	// background: blue;
+	mix-blend-mode: multiply;
+}
+
+h4 {
+	font-size: 46px;
+	color: $red;
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
+.arrow {
+	max-width: 50px;
+	margin: 0 auto;
+	margin: 30px;
+	mix-blend-mode: multiply;
 
 }
 
+.introCont {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px;
+}

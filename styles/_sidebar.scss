@@ -1,4 +1,5 @@
 .sidebar {
+	text-decoration: none;
 	background: $red;
 	height: 100vh;
 	position: fixed;
@@ -8,7 +9,7 @@
 	bottom: 0;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
-	padding: 40px;
+	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	aside {
@@ -53,6 +54,7 @@
 }
 
 aside.second {
+	text-decoration: none;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -70,4 +72,16 @@ aside.second {
 	ul {
 		font-size: 24px;
 	}
+}
+
+a.top {
+	text-decoration: none;
+}
+
+.first {
+	height: 100vh;
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
