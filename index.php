@@ -1,7 +1,7 @@
 <?php //index.php is the last resort template, if no other templates match ?>
 <?php get_header(); ?>
 
-<main>
+<main class="clearfix">
 <!-- SIDEBARS START -->
 	<div class="sidebar sidebarFull">
 		<aside class="first animated fadeIn">
@@ -57,7 +57,7 @@
 				<h4>... And this is stuff I've done.</h3>
 				<p class="aboutMe">I'm a Front-End Web Developer with a background in Industrial & Graphic Design. I really like hands-on needs research & problem solving. I'm best when I work my thoughts out on paper.</p>
 			</div>
-			<a href="#dev"><img src="<?php echo get_template_directory_uri(); ?>/assets/ArrowDown2.png" class="arrow" alt="Arrow down!"></a>
+			<a href="#dev"><img src="<?php echo get_template_directory_uri(); ?>/assets/ArrowDown2.png" class="arrow animated bounce infinite" alt="Arrow down!"></a>
 <!-- 			<ul class="nav introNav">
 				<li><a href="#dev">Development</a></li>
 				<li><a href="#design">Design</a></li>
