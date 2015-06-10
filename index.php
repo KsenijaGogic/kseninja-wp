@@ -11,7 +11,7 @@
 			</div>
 			<ul class="nav sidebarNav">
 				<li><a href="#dev">Development</a></li>
-				<li><a href="#design">Design</a></li>
+				<!-- <li><a href="#design">Design</a></li> -->
 				<li><a href="#contact">Contact</a></li>
 				<li><a href="<?php echo get_template_directory_uri(); ?>/assets/Ksenija-Gogic-Resume.pdf" target="_blank"> CV <i class="fa fa-paperclip"></i></a></li>
 			</ul>
@@ -34,7 +34,7 @@
 			</a>
 			<ul class="nav sidebarNav">
 				<li><a href="#dev">Development</a></li>
-				<li><a href="#design">Design</a></li>
+				<!-- <li><a href="#design">Design</a></li> -->
 				<li><a href="#contact">Contact</a></li>
 				<li><a href="<?php echo get_template_directory_uri(); ?>/assets/Ksenija-Gogic-Resume.pdf" target="_blank"> CV <i class="fa fa-paperclip"></i></a></li>
 			</ul>
@@ -109,7 +109,7 @@
 <!-- DEV PROJECTS END -->
 
 <!-- DESIGN PROJECTS START -->
-		<section class="design project animated fadeIn" id="design">
+		<!-- <section class="design project animated fadeIn" id="design">
 			<div class="projectContainer">
 				<h2 class="sectionTitle">Design</h2>			
 				<div class="projectGallery"><?php
@@ -142,7 +142,7 @@
 					<?php wp_reset_postdata(); ?>
 				</div>
 			</div>
-		</section><?php endif; ?>
+		</section><?php endif; ?> -->
 <!-- DESIGN PROJECTS END -->
 <!-- 		<section class="contact" id="contact">
 			<form action="" class="contact">

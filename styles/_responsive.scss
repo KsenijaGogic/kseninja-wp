@@ -1,9 +1,13 @@
 /* Portrait tablet and small desktops */
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
 
 // .HEADER
 		.sidebarFull {
-			// width: 40%;
+			width: 40%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			height: auto;
 			h1.name {
 				font-size: 56px;
 			}
@@ -13,7 +17,7 @@
 		}
 
 		.contentShrink {
-			// width: 60%;
+			width: 60%;
 		}
 		.introCont{
 			margin-top: 80px;
@@ -34,7 +38,7 @@
 
 		}
 		.contentFull {
-			// width: 75%;
+			width: 75%;
 		}
 // .PROJECTS 
 		section.project {
@@ -217,27 +221,82 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
-// .HEADER
-		.sidebarFull {
-			// width: 40%;
-			h1.name {
-				font-size: 56px;
+.intro {
+			height: auto;
+			.introCont {
+				margin-top: 200px;
 			}
-			h3.tagline {
-				font-size: 36px;
+			a {
+				margin: 40px;
+			}
+			img.arrow {
+				margin: 20px; 
 			}
 		}
 
-		.contentShrink {
-			// width: 60%;
-			height: 100%;
-			h4 {
-				font-size: 36px;
-				margin-top: 20px;
+
+		main {
+			width: 100%;
+		}
+
+		.sidebarFull {
+			// display: none;
+			width: 100%;
+			height: 220px;
+			position: fixed;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px;
+			.nameTitle {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin-bottom: 10px;
+			}
+			h1.name {
+				font-size: 44px;
+				// display: none;
+			}
+			h3.tagline {
+				font-size: 28px;
+				// display: none;
+				padding: 0;
+			}
+			ul.nav {
+				text-align: center;
+				font-size: 20px;
+				flex-direction: row;
+				margin-bottom: -10px;
+
+				li a {
+					padding: 10px;
+					margin: 0 10px;
+				}
+				li:last-child {
+					display: none;
+				}
+
+			}
+			ul.social {
+				margin-bottom: 5px;
+				font-size: 16px;
+				p {
+					display: none;
+				}
 			}
 		}
+
+		aside.first {
+			padding: 0;
+		}
+
+		.contentShrink {
+			width: 100%;
+
+		}
 		.introCont{
-			margin-top: 80px;
+			margin-top: 100px;
 			width: 100%;
 		}
 // .SIDEBAR
@@ -245,42 +304,84 @@
 			padding: 15px;
 		}
 		.sidebarShrink {
-			// width: 23%;
+			// display: none;
+			position: fixed;
+			height: 100px;
+			width: 100%;
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			.nameTitle {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
 			h1.name {
-				font-size: 44px;
+				font-size: 20px;
+				// display: none;
 			}
 			h3.tagline {
-				font-size: 30px;
+				font-size: 20px;
+				// display: none;
+				padding: 0;
 			}
+			img.header {
+				display: none;
+			}
+			ul.nav {
+				font-size: 16px;
+				flex-direction: row;
+				margin: 0 auto;
+				margin-bottom: -10px;
 
+				li a {
+					padding: 10px;
+					margin: 0 10px;
+				}
+				li:last-child {
+					display: none;
+				}
+
+			}
+			ul.social {
+				display: none;
+			}
 		}
 		.contentFull {
-			// width: 75%;
+			width: 100%;
 		}
 // .PROJECTS 
 		section.project {
-			padding: 20px 0;
-			.projectEach {
-				width: 600px;
-			}
-			.imageCaption {
-				width: 600px;
-				height: 200px;
-			}
+			padding: 100px 0;
+			width: 100%;
 			.projectContainer {
-				width: 650px;
+				width: 550px;
 				flex-wrap: wrap;
 				.projectGallery {
 					padding: 0;
 					margin: 0;
 					.wp-post-image {
-						max-width: 600px;
-						max-height: 480px;
+						max-width: 550px;
+						max-height: 375px;
 					}
 				}
 			}
+			.projectEach {
+				width: 100%;
+				margin: 20px 0;
+				padding: 0;
+			}
+			.imageCaption {
+				width: 100%;
+				height: 230px;
+			}
 		}
-		
+		section.project.design {
+			padding: 10px;
+			margin-top: -50px;
+		}
 // .CONTACT
 		section.contact {
 			// width: 100%;
@@ -294,6 +395,8 @@
 
 			}
 			.contactContainer {
+				height: 1000px;
+				margin-top: 0;
 				margin: auto;
 				.contactForm {
 				width: 600px;
@@ -307,11 +410,11 @@
 				padding-left: 20px;
 				// padding: 10px;
 				textarea {
-					width: 550px;
+					width: 560px;
 				}
 				p {
 					display: inline-block;
-					width: 550px;
+					width: 560px;
 				}
 				span {
 					input {
@@ -326,25 +429,49 @@
 
 		}
 
+
 	
 }
 
 /* Landscape phones and down */
-@media (max-width: 500px) {
+@media (max-width: 640px) {
 // .HEADER
+		.intro {
+			height: auto;
+			.introCont {
+				margin-top: 150px;
+			}
+			img.arrow {
+				display: none; 
+			}
+		}
+
+
+		main {
+			width: 100%;
+		}
+
 		.sidebarFull {
 			// display: none;
 			width: 100%;
-			height: 30vh;
+			height: 150px;
 			position: fixed;
 			justify-content: space-between;
 			padding: 10px;
+			.nameTitle {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				margin-bottom: 10px;
+			}
 			h1.name {
-				font-size: 35px;
-				margin-top: 0;
+				font-size: 28px;
+				// display: none;
 			}
 			h3.tagline {
-				font-size: 24px;
+				font-size: 28px;
+				// display: none;
+				padding: 0;
 			}
 			ul.nav {
 				font-size: 16px;
@@ -363,6 +490,7 @@
 			}
 			ul.social {
 				margin-bottom: 5px;
+				font-size: 10px;
 				p {
 					display: none;
 				}
@@ -378,7 +506,7 @@
 
 		}
 		.introCont{
-			margin-top: 25vh;
+			margin-top: 100px;
 			width: 100%;
 		}
 // .SIDEBAR
@@ -388,7 +516,7 @@
 		.sidebarShrink {
 			// display: none;
 			position: fixed;
-			height: 10vh;
+			height: 80px;
 			width: 100%;
 			padding: 0;
 			display: flex;
@@ -435,25 +563,28 @@
 		}
 // .PROJECTS 
 		section.project {
-			padding: 100px 0;
-			.projectEach {
-				width: 400px;
-			}
-			.imageCaption {
-				width: 400px;
-				height: 250px;
-			}
+			padding: 20px 0;
+			width: 100%;
 			.projectContainer {
-				width: 450px;
+				width: 550px;
 				flex-wrap: wrap;
 				.projectGallery {
 					padding: 0;
 					margin: 0;
 					.wp-post-image {
-						max-width: 400px;
-						max-height: 300px;
+						max-width: 550px;
+						max-height: 375px;
 					}
 				}
+			}
+			.projectEach {
+				width: 100%;
+				margin: 20px 0;
+				padding: 0;
+			}
+			.imageCaption {
+				width: 100%;
+				height: 230px;
 			}
 		}
 		section.project.design {
@@ -514,4 +645,234 @@
 				height: 100px;
 			}
 	}
+}
+
+//Portrait Phones
+@media (max-width: 375px) {
+// .HEADER
+	// .HEADER
+		.intro {
+			height: auto;
+			.introCont {
+				margin-top: 170px;
+				p.aboutMe {
+					font-size: 16px;
+				}
+			}
+			img.arrow {
+				display: none; 
+			}
+		}
+
+
+		main {
+			width: 100%;
+		}
+
+		.sidebarFull {
+			// display: none;
+			width:: 100%;
+			height: 160px;
+			position: fixed;
+			justify-content: space-between;
+			padding: 5px;
+			.nameTitle {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin-bottom: 10px;
+			}
+			h1.name {
+				font-size: 28px;
+				// display: none;
+			}
+			h3.tagline {
+				font-size: 18px;
+				// display: none;
+				padding: 0;
+			}
+			ul.nav {
+				font-size: 16px;
+				flex-direction: row;
+				margin: 0 auto;
+				margin-bottom: -10px;
+
+				li a {
+					padding: 5px;
+					margin: 0 10px;
+				}
+				li:last-child {
+					display: none;
+				}
+
+			}
+			ul.social {
+				margin-bottom: 5px;
+				font-size: 10px;
+				padding: 5px;
+				p {
+					display: none;
+				}
+			}
+		}
+
+		aside.first {
+			padding: 0;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+
+		.contentShrink {
+			width: 100%;
+
+		}
+		.introCont{
+			margin-top: 100px;
+			width: 100%;
+		}
+// .SIDEBAR
+		.sidebar {
+			padding: 15px;
+		}
+		.sidebarShrink {
+			// display: none;
+			position: fixed;
+			height: 80px;
+			width: 100%;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.nameTitle {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+			h1.name {
+				font-size: 20px;
+				// display: none;
+			}
+			h3.tagline {
+				font-size: 20px;
+				// display: none;
+				padding: 0;
+			}
+			img.header {
+				display: none;
+			}
+			ul.nav {
+				font-size: 16px;
+				flex-direction: row;
+				margin: 0 auto;
+				margin-bottom: -10px;
+
+				li a {
+					padding: 5px;
+					margin: 0 10px;
+				}
+				li:last-child {
+					display: none;
+				}
+
+			}
+			ul.social {
+				display: none;
+			}
+		}
+		.contentFull {
+			width: 100%;
+		}
+// .PROJECTS 
+		section.project {
+			padding: 100px 0;
+			width: 100%;
+			.projectContainer {
+				width: 300px;
+				flex-wrap: wrap;
+				h2 {
+					margin: 10px 0;
+				}
+				.projectGallery {
+					padding: 0;
+					margin: 0;
+					.wp-post-image {
+						max-width: 300px;
+						max-height: 200px;
+					}
+				}
+			}
+			.projectEach {
+				width: 100%;
+				margin: 20px 0;
+				padding: 0;
+			}
+			.imageCaption {
+				width: 100%;
+				height: auto;
+				font-size: 14px;
+				.tags {
+					margin-bottom: 60px;
+				}
+			}
+		}
+		section.project.design {
+			padding: 10px;
+			margin-top: -50px;
+		}
+// .CONTACT
+		section.contact {
+			// width: 100%;
+			width: 300px;
+			margin: 0 auto;
+			p.contact {
+				width: 80%;
+				text-align: center;
+				margin: 10px auto;
+				line-height: 1.3;
+
+			}
+			.contactContainer {
+				margin: auto;
+				.contactForm {
+				width: 300px;
+				}
+			}
+		}
+		.wpcf7 {
+			font-size: 16px;
+			// letter-spacing: 2px;
+			form {
+				padding-left: 0px;
+				// padding: 10px;
+				textarea {
+					width: 300px;
+				}
+				p {
+					display: inline-block;
+					width: 300px;
+				}
+				span {
+					input {
+					width: 100%;
+					}
+				}
+				input[type='submit']{
+					width: 100%;
+					display: block;
+				}
+			}
+
+		}
+		footer {
+			display: block;
+			.container {
+				background: $red;
+				text-align: center;
+				color: $white;
+				width: 100%;
+				height: 100px;
+			}
+	}
+
 }

@@ -3,7 +3,7 @@ $(function() {
 	
 	$(document).on("scroll", function(){
 		var $height = $(window).height();
-		console.log($(this).scrollTop())
+		console.log($(this).scrollTop());
 		// if you're past the first div
 		if( $(this).scrollTop() >= $height ) {
 			$('.sidebar').addClass('sidebarShrink').removeClass('sidebarFull');
